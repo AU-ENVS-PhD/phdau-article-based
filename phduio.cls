@@ -69,8 +69,10 @@
 
 
 %% Paper size
-\setstocksize{240mm}{170mm}
-\settrimmedsize{240mm}{170mm}{*}
+% \setstocksize{240mm}{170mm}
+% \settrimmedsize{240mm}{170mm}{*}
+\setstocksize{297mm}{210mm}
+\settrimmedsize{297mm}{210mm}{*}
 \settrims{0mm}{0mm}
 \setlrmarginsandblock{20mm}{28.7mm}{*}
 \setulmarginsandblock{25mm}{25mm}{*}
@@ -91,7 +93,7 @@
             \raggedright
 
             \vspace*{-5mm}
-            \includegraphics[width = 0.6\textwidth]{figures/phduio-logo}
+            \includegraphics[width = 0.6\textwidth]{au logo/AU_LOGO/UK/BLUE/aulogo_uk_var2_blue.pdf}
             \vskip18mm
 
             \resizebox
@@ -102,13 +104,6 @@
                 \width
                 \fi
             }{!}
-            {%
-                \LARGE
-                \theauthor
-            }
-
-            \vskip1.5\onelineskip
-
             {
                 \Huge
                 \bfseries
@@ -116,6 +111,20 @@
                 \thetitle
                 \par
             }
+            % {%
+            %     \LARGE
+            %     \theauthor
+            % }
+
+            % \vskip1.5\onelineskip
+
+            % {
+            %     \Huge
+            %     \bfseries
+            %     \boldmath
+            %     \thetitle
+            %     \par
+            % }
 
             {
                 \ifcsempty{\phduio@subtitle}
@@ -127,7 +136,13 @@
                     \par
                 }
             }
-
+            
+            \vskip1.5\onelineskip
+            {%
+                \LARGE
+                \theauthor
+            }
+            
             \vskip-\lastskip
             \vskip16mm
 
@@ -147,20 +162,26 @@
                 \phduio@faculty\
                 \AND
                 \phduio@affiliation\
+                \and
+                \phduio@supervisors\
             }
 
             \vfill
 
             \begin{minipage}[c][26mm]{28mm}
-                \hspace*{1.3mm}
-                \includegraphics[width = 26mm]{figures/phduio-apollon}
+                % \hspace*{1.3mm}
+                \includegraphics[width = 26mm]{au logo/AU_SEGL/blue/ausegl_blaa.pdf}
             \end{minipage}%
             \begin{minipage}[c]{\textwidth - 28mm}
                 \hfill
-                \LARGE
-                \bfseries
-                \the\year
-            \end{minipage}
+                \includegraphics[width = 26mm]{au logo/deep purple/DP logo FINAL TRANSPARENT BACKGROUND.png}
+            \end{minipage}%
+            % \begin{minipage}[c]{\textwidth - 28mm}
+            %     \hfill
+            %     \LARGE
+            %     \bfseries
+            %     \the\year
+            % \end{minipage}
 
             \vspace{2mm}
 
@@ -537,10 +558,11 @@
 \newcommand{\department}[1]{ \def \phduio@dept{#1} }
 \newcommand{\faculty}[1]{ \def \phduio@faculty{#1} }
 \newcommand{\affiliation}[1]{ \def \phduio@affiliation{#1} }
+\newcommand{\supervisors}[1]{ \def \phduio@supervisors{#1} }
 \department{}
 \faculty{}
 \affiliation{}
-
+\supervisors{}
 
 %% Specify International Standard Serial/Book Number
 \newcommand{\ISSN}[1]{ \def \phduio@ISN{ISSN\space#1}}
@@ -557,7 +579,8 @@
 \newcommand{\cover}[1]{ \def \phduio@cover{#1} }
 \newcommand{\printinghouse}[1]{ \def \phduio@printinghouse{#1} }
 \cover{Hanne Baadsgaard Utigard}
-\printinghouse{Reprosentralen, University of Oslo}
+\printinghouse{Library, Aarhus University}
+% \printinghouse{Reprosentralen, University of Oslo}
 
 
 %% Print colophon
@@ -570,7 +593,7 @@
             \vskip2\baselineskip
             \textit{Series of dissertations submitted to the}
             \par
-            \textit{\phduio@faculty, University of Oslo}
+            \textit{\phduio@faculty, Aarhus University}
             \par
             \ifcsempty{phduio@dissertationseries}
             {}

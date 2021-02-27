@@ -1,3 +1,9 @@
+Just a draft. Will keep updating it.
+<iframe src="/au_theis_template.pdf" height="800px" width="100%" style="border:none;"></iframe>
+
+
+Modified from :
+
 # PHDUIO – Article based thesis
 This LaTeX template is used for article based doctoral theses at the University of Oslo.
 For monographic theses,

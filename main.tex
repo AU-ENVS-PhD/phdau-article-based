@@ -1,16 +1,19 @@
 % https://github.com/martinhelso/phduio-article-based
 
 % Add [final] to remove marginal notes:
-\documentclass[colophon, english]{phduio}
+\documentclass[final, colophon, english]{phduio}
 
 \usepackage{phdstyle}   % Custom style
 \usepackage{kantlipsum} % Dummy text
 
 \author{Author}
-\title{Working Title}
+\title{A cool thesis at Deep Purple}
 \subtitle{Optional subtitle}
+
+\supervisors{Supervisors: a, b, c}
 \department{Department}
 \faculty{Faculty}
+
 \affiliation
 {
     Optional Second Affiliation
@@ -53,9 +56,8 @@
     \listoftables       % Or \listoftables*
 
     \mainmatter         % Folios in Arabic numerals, numbered chapters.
-
     \include{sections/introduction}
-
+    % \setcounter{page}{1}
     \paper              % "Chapter" is renamed "Paper"
     \paperpage          % Similar to \part*{Papers}, but appears in TOC
     \numberofpapers{3}  % Specify size of thumb indices
@@ -67,7 +69,7 @@
     \appendix           % "Chapter" is renamed "Appendix"
     \appendixpage       % Similar to \part*{Appendices}, but appears in TOC
 
-    \include{sections/appendixA}
-    \include{sections/appendixB}
+    % \include{sections/appendixA}
+    % \include{sections/appendixB}
 
 \end{document}
