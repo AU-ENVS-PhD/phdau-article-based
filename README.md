@@ -1,9 +1,14 @@
-Just a draft. Will keep updating it.
-<iframe src="/au_theis_template.pdf" height="800px" width="100%" style="border:none;"></iframe>
+Now it's still just a draft template. Will keep updating it. Tested in overleaf. 
+
+- Changed logo to AU and deep purple. Can be easily modified. 
+- Paper size set to A4, but the book format (17 x 24 cm) looks better.
+
+To do:
+- Support more citation style. 
+- Make better mistakes. 
 
 
 Modified from :
-
 # PHDUIO – Article based thesis
 This LaTeX template is used for article based doctoral theses at the University of Oslo.
 For monographic theses,
