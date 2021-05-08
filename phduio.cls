@@ -69,10 +69,10 @@
 
 
 %% Paper size
-% \setstocksize{240mm}{170mm}
-% \settrimmedsize{240mm}{170mm}{*}
-\setstocksize{297mm}{210mm}
-\settrimmedsize{297mm}{210mm}{*}
+\setstocksize{240mm}{170mm}
+\settrimmedsize{240mm}{170mm}{*}
+% \setstocksize{297mm}{210mm}
+% \settrimmedsize{297mm}{210mm}{*}
 \settrims{0mm}{0mm}
 \setlrmarginsandblock{20mm}{28.7mm}{*}
 \setulmarginsandblock{25mm}{25mm}{*}
