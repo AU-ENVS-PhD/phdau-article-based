@@ -96,14 +96,15 @@
             \includegraphics[width = 0.6\textwidth]{au logo/AU_LOGO/UK/BLUE/aulogo_uk_var2_blue.pdf}
             \vskip18mm
 
-            \resizebox
-            {
-                \ifdim \width > \textwidth
-                \textwidth
-                \else
-                \width
-                \fi
-            }{!}
+            % Shunan: title size is automatically changed if comment here
+            % \resizebox
+            % {
+            %     \ifdim \width > \textwidth
+            %     \textwidth
+            %     \else
+            %     \width
+            %     \fi
+            % }{!}
             {
                 \Huge
                 \bfseries

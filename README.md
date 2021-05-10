@@ -1,11 +1,16 @@
 Now it's still just a draft template. Will keep updating it. Tested in overleaf. 
 
 - Changed logo to AU and deep purple. Can be easily modified. 
-- Paper size set to A4, but the book format (17 x 24 cm) looks better.
+- Possible to change paper size set to A4, but by default is the book format (17 x 24 cm) which looks better.
+- Title page resize is disabled in case of longer title is needed.
+- Mendeley exported .bib files save "month" not in integer, therefore a preamble is inserted. 
 
 To do:
-- Support more citation style. 
+- Test more.
+- Write my thesis.
 - Make better mistakes. 
+
+To view the pdf template please go to my [post](https://www.glacier-hub.com/posts/2021-02-27-phdau-article-based-latextemplate)
 
 
 Modified from :

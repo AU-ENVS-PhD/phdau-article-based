@@ -121,14 +121,15 @@
 
 %% Bibliography
 \RequirePackage{mathscinet}
-\RequirePackage[backend    = biber,
+\RequirePackage[backend    = bibtex,
                 sortcites  = true,
                 giveninits = true,
-                doi        = false,
+                doi        = true,
                 isbn       = false,
                 url        = false,
                 sortlocale = nb_NO,
-                style      = alphabetic,
+                style      = authoryear,
+                maxnames = 2,
                 refsection = chapter]{biblatex}
 \DeclareNameAlias{sortname}{family-given}
 \DeclareNameAlias{default}{family-given}
