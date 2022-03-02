@@ -74,7 +74,7 @@
 % \setstocksize{297mm}{210mm}
 % \settrimmedsize{297mm}{210mm}{*}
 \settrims{0mm}{0mm}
-\setlrmarginsandblock{20mm}{28.7mm}{*}
+\setlrmarginsandblock{28.7mm}{20mm}{*}
 \setulmarginsandblock{25mm}{25mm}{*}
 \checkandfixthelayout
 
