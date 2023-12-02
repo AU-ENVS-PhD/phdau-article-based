@@ -64,6 +64,22 @@
 \RequirePackage{tikz}
 \usetikzlibrary{calc}
 
+\RequirePackage{svg}
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\includesvg[width=10pt]{au logo/orcid.logo.icon.svg}}}
+
+% % Make Orcid icon
+% \definecolor{lime}{HTML}{A6CE39}
+% \DeclareRobustCommand{\orcidicon}{%
+%     \begin{tikzpicture}
+%     \draw[lime, fill=lime] (0,0) 
+%     circle [radius=0.16] 
+%     node[white] {{\fontfamily{qag}\selectfont \tiny ID}};
+%     \draw[white, fill=white] (-0.0625,0.095) 
+%     circle [radius=0.007];
+%     \end{tikzpicture}
+%     \hspace{-2mm}
+% }
+% \newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\orcidicon}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LAYOUT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -95,7 +111,7 @@
             \vspace*{-5mm}
             \includegraphics[width = 0.6\textwidth]{au logo/AU_LOGO/UK/BLUE/aulogo_uk_var2_blue.pdf}
             \vskip18mm
-
+            
             % Shunan: title size is automatically changed if comment here
             % \resizebox
             % {
@@ -579,8 +595,8 @@
 %% Specify production credits
 \newcommand{\cover}[1]{ \def \phduio@cover{#1} }
 \newcommand{\printinghouse}[1]{ \def \phduio@printinghouse{#1} }
-\cover{Hanne Baadsgaard Utigard}
-\printinghouse{Library, Aarhus University}
+\cover{Shunan Feng (change to your name)}
+\printinghouse{AU TRYK, Aarhus University}
 % \printinghouse{Reprosentralen, University of Oslo}
 
 
@@ -592,7 +608,7 @@
         \begin{flushleft}
             \textbf{\sffamily\textcopyright\space\theauthor,\space\the\year}
             \vskip2\baselineskip
-            \textit{Series of dissertations submitted to the}
+            \textit{PhD dissertation submitted to the}
             \par
             \textit{\phduio@faculty, Aarhus University}
             \par

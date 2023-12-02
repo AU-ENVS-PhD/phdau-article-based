@@ -19,6 +19,8 @@
 %% Fonts and typography
 \RequirePackage{lmodern}           % Latin Modern
 \renewcommand{\sfdefault}{phv}     % Helvetica
+% \RequirePackage{helvet} % this works better than the line above.
+% \renewcommand{\familydefault}{\sfdefault}
 \RequirePackage[scaled]{beramono}  % Bera Mono (Bitstream Vera Sans Mono)
 \RequirePackage[final]{microtype}  % Improved typography
 \pretolerance = 1000               % Relaxes parameters for line breaks
@@ -54,7 +56,10 @@
     \fi                         % - Breaks from even to odd pages are allowed.
 }
 
-
+%% add glossaries
+\RequirePackage{glossaries}
+\makeglossaries
+% \renewcommand*{\glsclearpage}{}
 %% Language
 \RequirePackage{babel}
 \RequirePackage{csquotes}
@@ -62,7 +67,7 @@
 
 %% Tables
 \RequirePackage{multirow}      % Rows spanning multiple lines in tables
-\RequirePackage{rotating}      % Support rotating table
+\RequirePackage{rotating}
 \RequirePackage{tablefootnote} % Footnotes for tables
 
 
@@ -125,12 +130,14 @@
 \RequirePackage[backend    = bibtex,
                 sortcites  = true,
                 giveninits = true,
+                uniquename = init, % keep initals in unique name instead of fullname
                 doi        = true,
                 isbn       = false,
                 url        = false,
                 sortlocale = nb_NO,
                 style      = authoryear,
-                maxnames = 2,
+                maxnames   = 2,
+                natbib     = true,
                 refsection = chapter]{biblatex}
 \DeclareNameAlias{sortname}{family-given}
 \DeclareNameAlias{default}{family-given}
@@ -146,7 +153,8 @@
 }
 \addbibresource{bibliographies/chapter2.bib}
 \addbibresource{bibliographies/chapter4.bib}
-
+% \addbibresource{bibliographies/Paper.bib}
+% \addbibresource{bibliographies/paper1.bib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%% USER-DEFINED MACROS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -228,5 +236,8 @@
 \newcommand{\TikZ}{Ti\textit{k}Z\xspace}
 \newcommand{\matlab}{\textsc{Matlab}\xspace}
 
-
+\let\citet\cite
+\let\citep\parencite
+\providecommand{\keywords}[1]{\textbf{\textit{Keywords}:} #1}
 \endinput
+
